@@ -1,0 +1,190 @@
+/* JsonComparer.css */
+
+.json-comparer {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.json-comparer-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.json-comparer-header h2 {
+  color: #333;
+}
+
+.json-comparer-content {
+  display: grid;
+  border-radius: 5px;
+}
+
+.json-comparer-container {
+  display: flex;
+  flex-grow: 1;
+  height: 600px;
+}
+
+.json-input-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.json-input {
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.json-input:focus{
+  outline: none;
+}
+
+/* .compare-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+} */
+
+/* CSS */
+.compare-button {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.compare-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.compare-button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.compare-result {
+  margin-top: 20px;
+}
+
+.matching-keys {
+  color: #28a745;
+}
+
+.non-matching-keys {
+  color: #dc3545;
+}
+
+.non-matching-values {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.json-display-container{
+  
+}
+
+.json-display-matched {
+  display: flex;
+  width: 100%;
+}
+
+.json-display-unmatched {
+  display: flex;
+  width: 100%;
+}
+
+.button-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 15%;
+  margin:5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.json-comparer-heading h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+.json-comparer-heading h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.json-comparer-heading h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 105%;
+  max-width: 255px;
+  background-color: #333;
+}
+
+.json-comparer-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  margin-bottom: 0;
+}

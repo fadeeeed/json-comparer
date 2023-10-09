@@ -1,0 +1,27 @@
+/* JsonComparison.css */
+
+.json-comparison {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.json-container {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: auto;
+  white-space: pre;
+  tab-size: 2;
+  text-align: left; /* Add this property to align the text to the left */
+}
+
+.separator {
+  width: 1px;
+  background-color: #ddd;
+}
+
+.json-text {
+  font-size: 12px;
+}
