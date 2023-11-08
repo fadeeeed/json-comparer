@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap");
+
 /* JsonComparer.css */
 
 .json-comparer {
@@ -38,43 +40,30 @@
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #404040;
   border-radius: 5px;
   resize: none;
+  background: #404040;
+  color: #fafafa;
 }
 
-.json-input:focus{
+.json-input:focus {
   outline: none;
 }
 
-/* .compare-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-} */
-
-/* CSS */
 .compare-button {
   align-self: center;
-  background-color: #fff;
+  background-color: #743d7c;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
   background-size: 4px 3px;
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  // border-width: 2px;
+  box-shadow: #c2fbd7 6px 19px 13px -13px;
   box-sizing: border-box;
-  color: #41403e;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: Neucha, sans-serif;
@@ -91,10 +80,11 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border: none;
 }
 
 .compare-button:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  box-shadow: #c2fbd7 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
@@ -128,10 +118,6 @@
   font-weight: bold;
 }
 
-.json-display-container{
-  
-}
-
 .json-display-matched {
   display: flex;
   width: 100%;
@@ -147,7 +133,7 @@
   flex-direction: column;
   gap: 40px;
   width: 15%;
-  margin:5px;
+  margin: 5px;
   align-items: center;
   justify-content: center;
 }
@@ -159,6 +145,8 @@
   line-height: 1.5em;
   padding-bottom: 15px;
   position: relative;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff;
 }
 .json-comparer-heading h1:before {
   content: "";
@@ -167,7 +155,7 @@
   bottom: 0;
   height: 5px;
   width: 55px;
-  background-color: #111;
+  background-color: #743d7c;
 }
 .json-comparer-heading h1:after {
   content: "";
@@ -177,7 +165,7 @@
   height: 1px;
   width: 105%;
   max-width: 255px;
-  background-color: #333;
+  background-color: #743d7c;
 }
 
 .json-comparer-heading {
@@ -187,4 +175,8 @@
 
 .copyright {
   margin-bottom: 0;
+}
+
+.json-comparer-title {
+  text-color: "#ffffff";
 }

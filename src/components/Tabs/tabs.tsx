@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./tabs.scss";
 
-const Tabs = ({ tabs }: any) => {
-  const [activeTab, setActiveTab] = useState(tabs[0].id);
+const Tabs = ({ tabs, defaultActiveTab }: any) => {
+  const [activeTab, setActiveTab] = useState(defaultActiveTab);
 
   const handleTabClick = (tabId: any) => {
     setActiveTab(tabId);
