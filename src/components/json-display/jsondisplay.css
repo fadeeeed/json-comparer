@@ -25,3 +25,17 @@
 .json-text {
   font-size: 12px;
 }
+
+.json-input{
+  box-shadow: #c2fbd7 2px 8px 8px -5px;
+  transition: all 235ms ease-in-out;
+}
+
+.json-input:hover{
+  box-shadow: #c2fbd7 15px 28px 25px -2px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.json-input:focus{
+  box-shadow: #c2fbd7 15px 28px 25px -2px;
+}

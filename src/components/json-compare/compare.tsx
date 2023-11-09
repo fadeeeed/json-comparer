@@ -207,11 +207,11 @@ function JSONComparer(): React.JSX.Element {
       <div className="json-comparer">
         <div className="json-comparer-content">
           <div className="json-comparer-heading">
-            <h1>JSON Comparer</h1>
+            <h1 className="json-comparer-title">JSON Comparer</h1>
           </div>
           <div className="json-comparer-container">
             <textarea
-              className="json-input"
+              className="json-input json-input-first"
               value={text1}
               onChange={handleJson1Change}
               placeholder="Enter JSON 1"
@@ -226,7 +226,7 @@ function JSONComparer(): React.JSX.Element {
                 handleChange={handleBeautify2Changes}
                 arrow="right"
               />
-              <Toggle text="Ignore Nested Keys"></Toggle>
+              <Toggle text="Nested Objects"></Toggle>
               <button className="compare-button" onClick={handleOptions}>
                 Options
               </button>
@@ -236,7 +236,7 @@ function JSONComparer(): React.JSX.Element {
             </div>
 
             <textarea
-              className="json-input"
+              className="json-input json-input-second"
               value={text2}
               onChange={handleJson2Change}
               placeholder="Enter JSON 2"
@@ -245,20 +245,16 @@ function JSONComparer(): React.JSX.Element {
           </div>
         </div>
 
-        <div>
-          <h3>
+        {(isMisMatchedKeys || isMatchedKeys) && (
+          <div className="json-display-container">
             Comparison Result:{" "}
-            {isMisMatchedKeys || isMatchedKeys ? (
-              <span className="hightlighted-text">{isSame.toString()}</span>
-            ) : (
-              <span className="hightlighted-text">Nothing Compared</span>
-            )}
-          </h3>
-        </div>
-
-        <div className="json-display-container">
-          <Tabs tabs={tabs}></Tabs>
-        </div>
+            <span className="hightlighted-text">{isSame.toString()}</span>
+            <Tabs
+              tabs={tabs}
+              defaultActiveTab={isMisMatchedKeys ? 1 : 2}
+            ></Tabs>
+          </div>
+        )}
       </div>
       {isOptionsOpen && <Options></Options>}
       {isError && <ErrorModal></ErrorModal>}
